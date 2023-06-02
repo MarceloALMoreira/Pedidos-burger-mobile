@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import NewPedidos from './pages/NewPedidos'
+import Rotas from './routes/routes'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <NewPedidos />
+    <Rotas />
   </React.StrictMode>,
 )

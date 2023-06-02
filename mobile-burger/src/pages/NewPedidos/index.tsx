@@ -1,7 +1,14 @@
 
 const NewPedidos = () => {
   return (
-    <div>NewPedidos</div>
+    <div>
+
+      <h1> Add Pedidos</h1>
+      <hr />
+
+    <a href="/pedidos">Ver Pedidos</a>
+
+    </div>
   )
 }
 
