@@ -1,4 +1,4 @@
-import { Button, Container, ContainerInput, ContainerItens, Logotipo, TextoLabel, Titulo } from "./styles"
+import { Button, Container, ContainerButtons, ContainerInput, ContainerItens,  LinkUser,  Logotipo, TextoLabel, Titulo } from "./styles"
 
 import LogoBurger from '../../assets/LogoBurger.svg'
 
@@ -22,7 +22,13 @@ const NewPedidos = () => {
 
         <TextoLabel>Nome do Cliente</TextoLabel>
         <ContainerInput placeholder="Steve Jobs" />
+
+    <ContainerButtons>
+
         <Button>Novo Pedido</Button>
+
+        <Button>Novo Pedido</Button>
+    </ContainerButtons>
       </ContainerItens>
 
     </Container>
