@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 
@@ -29,7 +28,7 @@ export const ContainerItens = styled.div`
    display: flex;
    flex-direction: column;
    padding: 44px 12px;
-   width: 380px;
+   width: 320px;
    margin-bottom: 20px;
    border-radius: 7.5px;
    background-color: black;
@@ -48,7 +47,7 @@ export const Button = styled.button`
     gap: 20px;  
 
     margin-top: 57px;
-    width: 150px;
+    width: 290px;
     height: 44px;
 
     border-radius: 7.5px;
@@ -66,38 +65,7 @@ export const Button = styled.button`
     &:active{
         opacity: 0.5;
     }
-
-
 `
-
-// export const LinkUser = styled(Link)`
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 20px;
-
-//     margin-top: 57px;
-//     width: 157px;
-//     height: 34px;
-//     text-decoration: none;
-//     background: rgba(1, 1, 1, -5.8);
-//     border-radius: 7.5px;
-//     border: 1px solid white;
-
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 28px;
-//     color: #fff;
-
-//     &:hover{
-//         opacity: 0.8;
-//     }
-//     &:active{
-//         opacity: 0.5
-//     }
-
-// `
 
 export const Titulo = styled.h1`
     font-style: normal;
@@ -113,24 +81,23 @@ export const TextoLabel = styled.label`
     margin-bottom: 5px;
 
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 18px;
-    padding-left: 12px;
+    padding-left: 7.5px;
     line-height: 22px;
     align-items: center;
     letter-spacing: -0.408px;
     color: #fff;
 `
 
-
-
 export const ContainerInput = styled.input`
-    height: 32.5px;
+    height: 40.5px;
     background: rgba(255, 255, 255, 0.25);
     border-radius: 7.5px;
     border: none;
     outline: none;
-    padding-left: 22px;
+    width: 290px;
+    padding-left: 7.5px;
     font-style: normal;
     font-weight: 200;
     font-size: 16px;
