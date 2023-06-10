@@ -1,34 +1,35 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 
 export const Container = styled.section`
-
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 44px;
+    gap: 30px;
     height: 100%;
     min-height: 100vh;
-    background: linear-gradient(157.44deg, rgba(255, 22, 255, 0.6) 0.84%, rgba(255, 22, 255, 0.6) 0.85%, rgba(255, 255, 255, 0.15) 100%);
-    /* background-color: black; */
 
-
-
+    background: 
+    linear-gradient(157.44deg, 
+    rgba(255, 22, 255, 0.6) 0.84%, 
+    rgba(255, 22, 255, 0.6) 0.85%, 
+    rgba(255, 255, 255, 0.15) 100%);
 `
 
 export const Logotipo = styled.img`
     align-self: center;
-    width: 200px;
-    padding: 10px;
+    width: 150px;
+
+    margin-bottom: 22px;
 `
 
 export const ContainerItens = styled.div`
    display: flex;
    flex-direction: column;
    padding: 44px 12px;
-   width: 320px;
    margin-bottom: 20px;
    border-radius: 7.5px;
    background-color: black;
@@ -36,19 +37,17 @@ export const ContainerItens = styled.div`
 
 export const ContainerButtons = styled.div`
     display: flex;
-    justify-content: space-around;
-    gap: 10px;
+    justify-content: space-between;
+
 `
 
-export const Button = styled.button`
+export const Adicionar = styled.button`
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 20px;  
-
     margin-top: 57px;
-    width: 290px;
-    height: 44px;
+    width: 140px;
+    height: 34px;
 
     border-radius: 7.5px;
     border: none;
@@ -61,20 +60,60 @@ export const Button = styled.button`
 
     &:hover{
         opacity: 0.8;
+        cursor: pointer;
     }
     &:active{
         opacity: 0.5;
     }
 `
 
+export const VerPedidos = styled(Link)`
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+    margin-top: 57px;
+    width: 140px;
+    height: 34px;
+
+    border-radius: 7.5px;
+    border: 1px solid white;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    background: none;
+
+    &:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    &:active{
+        opacity: 0.5;
+    }
+    i{
+        display: flex;
+        color: #D93856;
+        font-size: 18px;
+
+    }
+`
+
 export const Titulo = styled.h1`
+
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
-    color: #fff;
+    margin-bottom: 22px;
+    padding: 5px;
 
-    margin: 25px 0px 35px 0px;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background: white;
+    border-radius: 7.5px;
 `
 
 export const TextoLabel = styled.label`
@@ -91,12 +130,12 @@ export const TextoLabel = styled.label`
 `
 
 export const ContainerInput = styled.input`
-    height: 40.5px;
+    width: 300px;
+    height: 32.5px;
     background: rgba(255, 255, 255, 0.25);
     border-radius: 7.5px;
     border: none;
     outline: none;
-    width: 290px;
     padding-left: 7.5px;
     font-style: normal;
     font-weight: 200;
